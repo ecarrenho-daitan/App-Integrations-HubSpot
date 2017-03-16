@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>integration-universal-whi</artifactId>
+    <artifactId>integration-hubspot-whi</artifactId>
 
-    <description>Universal WebHook Integration</description>
-    <url>https://github.com/symphonyoss/App-Integrations-Universal</url>
+    <description>Hubspot Webhook Integration</description>
+    <url>https://github.com/symphonyoss/App-Integrations-HubSpot</url>
 
     <licenses>
         <license>
@@ -22,8 +22,8 @@
     </licenses>
 
     <properties>
-        <webapp.directory>universal</webapp.directory>
-        <rpm.name>universal-symphony-integration</rpm.name>
+        <webapp.directory>hubspot</webapp.directory>
+        <rpm.name>hubspot-symphony-integration</rpm.name>
     </properties>
 
     <dependencies>
@@ -166,9 +166,9 @@
     </contributors>
 
     <scm>
-        <connection>scm:git:git@github.com:symphonyoss/App-Integrations-Universal.git</connection>
-        <developerConnection>scm:git:git@github.com:symphonyoss/App-Integrations-Universal.git</developerConnection>
-        <url>https://github.com/symphonyoss/App-Integrations-Universal</url>
+        <connection>scm:git:git@github.com:symphonyoss/App-Integrations-HubSpot.git</connection>
+        <developerConnection>scm:git:git@github.com:symphonyoss/App-Integrations-HubSpot.git</developerConnection>
+        <url>https://github.com/symphonyoss/App-Integrations-HubSpot</url>
     </scm>
 
 </project>
