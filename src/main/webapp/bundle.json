@@ -2,12 +2,12 @@
   "applications": [
     {
       "type": "sandbox",
-      "id": "devUniversalWebHookIntegration",
-      "name": "Universal Webhook",
-      "blurb": "Universal Webhook in Development Mode",
+      "id": "devHubspotWebHookIntegration",
+      "name": "HubSpot",
+      "blurb": "HubSpot in Development Mode",
       "publisher": "Symphony",
-      "url": "https://localhost.symphony.com/apps/universal/controller.html?configurationId=5889cdafe4b06d92cebc31e3&botUserId=7627861919708&id=devUniversalWebHookIntegration&context=apps/universal",
-      "icon": "https://localhost.symphony.com/apps/universal/img/appstore-logo.png",
+      "url": "https://localhost.symphony.com/apps/hubspot/controller.html?configurationId=58caa14231d42b120414ae83&botUserId=346621040656502&id=devHubspotWebHookIntegration&context=apps/hubspot",
+      "icon": "https://localhost.symphony.com/apps/hubspot/img/appstore-logo.png",
       "domain": ".symphony.com"
     }
   ]
