@@ -26,7 +26,7 @@ import org.symphonyoss.integration.webhook.exception.WebHookParseException;
 import java.io.IOException;
 
 @Component
-public class HubSpotWebHookIntegration extends WebHookIntegration {
+public class HubspotWebHookIntegration extends WebHookIntegration {
 
   private static final String WEBHOOK_EVENT = "HubSpot Webhook";
 

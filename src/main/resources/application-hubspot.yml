@@ -1,6 +1,6 @@
 applications:
   hubspot:
-    component: hubSpotWebHookIntegration
+    component: hubspotWebHookIntegration
     name: HubSpot
     description: "Use this application to receive HubSpot notifications on your chat rooms."
     publisher: Symphony

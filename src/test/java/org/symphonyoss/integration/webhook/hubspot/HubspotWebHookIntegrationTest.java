@@ -28,7 +28,7 @@ import org.symphonyoss.integration.webhook.WebHookPayload;
 import java.io.IOException;
 import java.util.Collections;
 
-public class HubSpotWebHookIntegrationTest {
+public class HubspotWebHookIntegrationTest {
 
   private static final String FORM_SUBMISSION_WEB_HOOK_PAYLOAD_JSON =
       "formSubmissionWebHookPayload.json";
@@ -43,7 +43,7 @@ public class HubSpotWebHookIntegrationTest {
   @Mock
   private IntegrationInstance mockIntegrationInstance;
 
-  private HubSpotWebHookIntegration hubSpotWebHookIntegration = new HubSpotWebHookIntegration();
+  private HubspotWebHookIntegration hubSpotWebHookIntegration = new HubspotWebHookIntegration();
 
   @Test
   public void testFormSubmissionMessage() throws IOException {
