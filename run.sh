@@ -15,8 +15,8 @@ curl -s https://raw.githubusercontent.com/symphonyoss/contrib-toolbox/master/scr
 
 rm -rf tomcat ; mkdir tomcat
 
-java $LIBS_PATH \
--Dlogs.basedir=target \
+java -Dlog4j2.outputAllToConsole=true -Dlogs.basedir=target \
+-agentlib:jdwp=transport=dt_socket,server=y,address=5000,suspend=n \
 -jar target/integration.jar \
---spring.config.location=$PWD \
+--spring.profiles.active=hubspot \
 --server.tomcat.basedir=$PWD/tomcat
