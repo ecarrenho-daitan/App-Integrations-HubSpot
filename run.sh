@@ -1,20 +1,21 @@
 #!/bin/bash
 
-# Run integrations locally by simulating what Travis would do
+# Run integrations locally
 
+# Import environment variables
 . ./env.sh
 
+# Build the project and the spring boot bundle
 mvn clean install -Prun
 
-# Download certs... we'll skip this as we already have them in a local ./certs folder
-# curl -s https://raw.githubusercontent.com/symphonyoss/contrib-toolbox/master/scripts/download-files.sh | bash
-
-# Inject vars
+# Inject environment variables in application.yaml
 rm -rf application.yaml
 curl -s https://raw.githubusercontent.com/symphonyoss/contrib-toolbox/master/scripts/inject-vars.sh | bash -s -- ./local-run/application.yaml.template application.yaml
 
+# Cleanup tomcat folder from previous runs
 rm -rf tomcat ; mkdir tomcat
 
+# Run the Spring Boot application
 java -Dlog4j2.outputAllToConsole=true -Dlogs.basedir=target \
 -agentlib:jdwp=transport=dt_socket,server=y,address=5000,suspend=n \
 -jar target/integration.jar \
